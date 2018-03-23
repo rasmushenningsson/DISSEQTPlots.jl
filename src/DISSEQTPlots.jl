@@ -25,7 +25,7 @@ include("pairwise.jl")
 include("talus.jl")
 include("fitnesslandscape.jl")
 include("save.jl")
-include("saveplotly.jl")
+Pkg.installed("PlotlyJS")!=nothing && include("saveplotly.jl")
 
 
 
